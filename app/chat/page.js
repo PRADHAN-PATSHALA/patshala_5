@@ -3,7 +3,7 @@ import React from 'react'
 const Chat = () => {
   return (
     <>
-      <h1>Chat Now</h1>
+      <h1 className='text-white'>Chat Now</h1>
     </>
   )
 }
