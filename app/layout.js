@@ -27,6 +27,12 @@ export default function RootLayout({ children }) {
       <Navber />
         {children}
       <Footer />
+
+
+
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4713305834278197"
+     crossorigin="anonymous"></script>
         </body>
     </html>
   )
