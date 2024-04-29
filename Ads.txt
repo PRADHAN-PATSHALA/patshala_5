@@ -1,1 +1,8 @@
 google.com, pub-4713305834278197, DIRECT, f08c47fec0942fa0
+
+
+
+mongodb password--- 0V28OWZ9OCUbkiro  
+
+
+conect string--- mongodb+srv://Patshala-Students:0V28OWZ9OCUbkiro@cluster0.oartu2f.mongodb.net/

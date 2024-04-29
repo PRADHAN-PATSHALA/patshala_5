@@ -7,3 +7,10 @@
     padding: 0px;
     margin: 0px;
 }
+
+
+p{
+    text-overflow: ellipse;
+    overflow: hidden;
+    margin-top: 8px;
+}

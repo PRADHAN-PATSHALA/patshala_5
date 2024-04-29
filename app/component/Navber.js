@@ -14,6 +14,7 @@ export const Navber =()=>{
                 <li className="mr-3 font-serif cursor-pointer"><Link href='/cources'>COURCES</Link></li>
                 <li className="mr-3 font-serif cursor-pointer"><Link href="/about">ABOUT</Link></li>
                 <li className="mr-3 font-serif cursor-pointer"><Link href="/contact">CONTACT</Link></li>
+                <li className="mr-3 font-serif cursor-pointer"><Link href="/signIn">SIGN-IN</Link></li>
              </ul>
           </nav>
         </>
