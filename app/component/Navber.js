@@ -7,7 +7,7 @@ export const Navber =()=>{
         <>
           <nav className="flex px-2 md:px-6 bg-om w-full text-slate-400">
             <div>
-              <Image src="/icon.png" height="45" width="45"></Image>
+              <Image alt="icon" src="/icon.png" height="45" width="45"></Image>
             </div>
              <ul className="mt-3 absolute right-0 top-0 z-20 flex">
                 <li className="mr-3 font-serif cursor-pointer"><Link href="/">HOME</Link></li>
