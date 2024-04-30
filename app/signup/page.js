@@ -30,7 +30,7 @@ const SignUp = () => {
     if (account) {
       window.location.assign("/login");
     } else {
-      
+      return null;
     }
 
   };
