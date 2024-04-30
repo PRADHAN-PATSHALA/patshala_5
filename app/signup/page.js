@@ -26,7 +26,12 @@ const SignUp = () => {
     setEmail("");
     setName("");
     setPassword("");
-
+    
+    if (account) {
+      window.location.assign("/login");
+    } else {
+      
+    }
 
   };
   
