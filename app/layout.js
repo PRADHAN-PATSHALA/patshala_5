@@ -6,8 +6,11 @@ import { Footer } from '@/app/component/Footer'
 import gsap from 'gsap'
 import Mouse from './component/Mouse'
 
-export default function RootLayout({ children }) {
+
+
+export default function RootLayout({ children, pageProps }) {
   return (
+    
     <html lang="en">
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -15,7 +18,7 @@ export default function RootLayout({ children }) {
       <title>PRADHAN PATSHALA</title>
        
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4713305834278197"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
 
       </head>
       <body className='bg-om font-serif' onMouseMove={(dest)=>{
@@ -39,5 +42,6 @@ export default function RootLayout({ children }) {
       
         </body>
     </html>
+  
   )
 }

@@ -9,17 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.0.3",
     "@vercel/speed-insights": "^1.0.2",
+    "appwrite": "^14.0.1",
     "git": "^0.1.5",
     "gsap": "^3.12.3",
     "logrocket": "^7.0.0",
     "mongodb": "^6.5.0",
     "mongoos": "^0.0.1-security",
-    "mongoose": "^8.0.3",
-    "next": "^14.0.4",
+    "mongoose": "^8.3.3",
+    "next": "^14.2.3",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "zod": "^3.23.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
