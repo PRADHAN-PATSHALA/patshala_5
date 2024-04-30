@@ -14,14 +14,21 @@ const SignUp = () => {
   const [Passwod, setPassword] = useState("");
   
 
-  const Register = async () => {
+  const Register = async (e) => {
+    e.preventDefault();
     try {
       account.create(ID.unique(), Email, Passwod, Name);
       Register();
     } catch (error) {
       throw error
-    }
-  }
+    };
+
+    setEmail("");
+    setName("");
+    setPassword("");
+
+
+  };
   
 
 
