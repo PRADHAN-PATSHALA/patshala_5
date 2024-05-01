@@ -19,6 +19,8 @@ module.exports = {
         'sonu': '#1E293B',
         'om': '#040B1B',
         'mata': '#52FFFB',
+        'new': '#ECEDF1',
+         'new2': '#F0483E',
       }
     },
   },

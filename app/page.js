@@ -1,13 +1,14 @@
-import { VideoBox } from "./component/VideoBox";
 import { LandPage } from "./component/LandPage";
-
+import Image from 'next/image'
+import { Navber } from "./component/Navber";
 
 
 const Main =()=>{
   return(
     <>
-      <div className="h-screen w-full">
-      <VideoBox />
+      <div className="relative h-screen w-full">
+      <Image fill src="/theam.jpg"></Image>
+      <Navber />
       <LandPage />
       </div>
     </>

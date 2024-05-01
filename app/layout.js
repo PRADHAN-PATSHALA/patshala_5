@@ -32,7 +32,7 @@ export default function RootLayout({ children, pageProps }) {
             }}>
               <SpeedInsights/>
                <Mouse />
-      <Navber />
+      
         {children}
       <Footer />
 

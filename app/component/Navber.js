@@ -5,9 +5,9 @@ import Image from "next/image";
 export const Navber =()=>{
     return(
         <>
-          <nav className="flex px-2 h-[8vh] sm:h-[9vh] sm:px-6 bg-om w-full text-slate-400">
+          <nav className="flex px-2 h-[8vh] sm:h-[9vh] sm:px-6 w-full text-white">
             <div>
-              <Image alt="icon" src="/icon.png" height={30} width={30} className="h-[5vh] rounded-full mt-2 sm:mt-[5.5px] bg-slate-400 sm:h-[7vh] sm:w-[7vh] w-[5vh]"></Image>
+              <Image alt="icon" src="/icon.png" height={30} width={30} className="h-[5vh] absolute rounded-full mt-2 sm:mt-[5.5px] bg-white/20 sm:h-[7vh] sm:w-[7vh] w-[5vh]"></Image>
             </div>
              <ul className="mt-[16px] text-[0.6rem] sm:text-sm absolute right-4 sm:right-12 top-0 z-20 flex">
                 <li className="mr-3 cursor-pointer"><Link href="/">HOME</Link></li>
