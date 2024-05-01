@@ -6,3 +6,8 @@ mongodb password--- 0V28OWZ9OCUbkiro
 
 
 conect string--- mongodb+srv://Patshala-Students:0V28OWZ9OCUbkiro@cluster0.oartu2f.mongodb.net/
+
+
+
+
+
