@@ -21,7 +21,7 @@ export default function RootLayout({ children, pageProps }) {
      crossOrigin="anonymous"></script>
 
       </head>
-      <body className='bg-om font-serif' onMouseMove={(dest)=>{
+      <body className='bg-om font-serif w-full' onMouseMove={(dest)=>{
                const mouse = document.getElementById("cursor");
                const posx = dest.clientX
                const posy = dest.clientY

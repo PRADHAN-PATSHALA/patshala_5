@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import {ID, account} from "../appwrite"
+import Dash from '../component/Dash';
 
 
 
@@ -51,17 +52,7 @@ const Register = async (e) => {
     } catch (error) {
       return <p className='text-red-600'>{error}</p>
     };
-  }
-
-
-const Logout = async () => {
-    try {
-        await account.deleteSession('current');
-        setUser(null);
-    } catch (error) {
-        return <p className='text-red-600'>{error}</p>
-    }
-}  
+  } 
 
 const logScreen = () => {
   setScreen('log');
@@ -73,13 +64,7 @@ const resScreen = () => {
 
 if (User) {
   return (
-      <>
-         <div className='text-white'>
-              <h1>Loged in</h1>
-              <button onClick={Logout}>Logout</button>
-         </div>
-
-      </>
+      <Dash />
   )
 }
 
