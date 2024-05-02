@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
      crossOrigin="anonymous"></script>
 
       </head>
-      <body className='bg-new font-serif w-full' onMouseMove={(dest)=>{
+      <body className='bg-om font-serif w-full' onMouseMove={(dest)=>{
                const mouse = document.getElementById("cursor");
                const posx = dest.clientX
                const posy = dest.clientY
