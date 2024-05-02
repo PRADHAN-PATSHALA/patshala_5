@@ -1,14 +1,15 @@
 "use client"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import '../styles/globals.css'
-import { Navber } from '@/app/component/Navber'
-import { Footer } from '@/app/component/Footer'
 import gsap from 'gsap'
 import Mouse from './component/Mouse'
 
 
 
-export default function RootLayout({ children, pageProps }) {
+export default function RootLayout({ children }) {
+
+
+
   return (
     
     <html lang="en">
@@ -21,7 +22,7 @@ export default function RootLayout({ children, pageProps }) {
      crossOrigin="anonymous"></script>
 
       </head>
-      <body className='bg-om font-serif w-full' onMouseMove={(dest)=>{
+      <body className='bg-new font-serif w-full' onMouseMove={(dest)=>{
                const mouse = document.getElementById("cursor");
                const posx = dest.clientX
                const posy = dest.clientY
@@ -32,9 +33,9 @@ export default function RootLayout({ children, pageProps }) {
             }}>
               <SpeedInsights/>
                <Mouse />
-      
+      {/* <Navber /> */}
         {children}
-      <Footer />
+      {/* <Footer /> */}
 
 
 

@@ -20,7 +20,8 @@ module.exports = {
         'om': '#040B1B',
         'mata': '#52FFFB',
         'new': '#ECEDF1',
-         'new2': '#F0483E',
+        'new2': '#F0483E',
+        'new3': '#281421',
       }
     },
   },

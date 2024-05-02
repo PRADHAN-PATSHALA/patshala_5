@@ -57,4 +57,4 @@ const ChatSec = () => {
   )
 }
 
-export default ChatSec
+export default ChatSec;
