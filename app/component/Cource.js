@@ -51,8 +51,6 @@ const Cource = () => {
         duration: 2,
         yoyo: true,
     });
-    const audio = new Audio('/fire.mp3');
-    audio.play();
  }
 
  const pause3 = () => {
@@ -63,8 +61,6 @@ const Cource = () => {
         yoyo: true,
         delay: 5
     });
-    const audio = new Audio('/fire.mp3');
-    audio.pause();
  }
 
 
