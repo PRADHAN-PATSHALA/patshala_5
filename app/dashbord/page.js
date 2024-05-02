@@ -72,7 +72,7 @@ if (Screen == 'log') {
   return (
     <>
      <div className='h-screen w-full'>
-     <form onSubmit={Login} className='h-[40vh] ml-[48vh] mt-[20vh] w-[120vh] bg-white/20 text-slate-100 rounded'>
+     <form onSubmit={Login} className='h-[40vh] ml-[48vh] relative top-[20vh] w-[120vh] bg-white/20 text-slate-100 rounded'>
       <label htmlFor="email" className='ml-[25vh]'>Email/PhoneNumber:   <input value={Email} onChange={(e)=>{setEmail(e.target.value)}} id='email' name='email' type='email' placeholder='Enter your Email' className=' mt-[5vh] w-[36%] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200s' /></label>
 
       <label htmlFor="password" className='ml-[25vh]'>Password:   <input value={Password} onChange={(e)=>{setPassword(e.target.value)}} id='password' name='passwod'  type='password' placeholder='Enter a Passwod' className=' mt-[5vh] w-[47%] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200s' /></label>
@@ -91,8 +91,8 @@ if (Screen == 'log') {
 if (Screen === null) {
   return (
     <>
-      <div className='h-screen w-full'>
-      <form onSubmit={Register} className='h-[80vh] ml-[48vh] w-[120vh] bg-white/20 text-slate-100 rounded'>
+      <div className='h-[150vh] w-full'>
+      <form onSubmit={Register} className='h-[80vh] ml-[48vh] relative top-[18vh] w-[120vh] bg-white/20 text-slate-100 rounded'>
           <label htmlFor="name" className='ml-[25vh]'>Name:   <input value={Name} onChange={(e)=>{setName(e.target.value)}} name='name' id='name' type='text' placeholder='Enter your Name' className=' mt-[8vh] w-[50%] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200s' /></label>
           
           <label htmlFor="name" className='ml-[25vh]'>Father Name:   <input id='father' name='father' type='text' placeholder="Enter your Father's Name" className='w-[44%] mt-[5vh] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200s' />

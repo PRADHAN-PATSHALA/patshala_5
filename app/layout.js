@@ -1,6 +1,8 @@
 "use client"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import '../styles/globals.css'
+import { Navber } from "./component/Navber"
+import { Footer } from "./component/Footer"
 import gsap from 'gsap'
 import Mouse from './component/Mouse'
 
@@ -33,9 +35,9 @@ export default function RootLayout({ children }) {
             }}>
               <SpeedInsights/>
                <Mouse />
-      {/* <Navber /> */}
+      <Navber />
         {children}
-      {/* <Footer /> */}
+      <Footer />
 
 
 
