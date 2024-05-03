@@ -71,13 +71,15 @@ if (User) {
 if (Screen == 'log') {
   return (
     <>
-     <div className='h-screen w-full'>
-     <form onSubmit={Login} className='h-[40vh] ml-[48vh] relative top-[20vh] w-[120vh] bg-white/20 text-slate-100 rounded'>
-      <label htmlFor="email" className='ml-[25vh]'>Email/PhoneNumber:   <input value={Email} onChange={(e)=>{setEmail(e.target.value)}} id='email' name='email' type='email' placeholder='Enter your Email' className=' mt-[5vh] w-[36%] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200s' /></label>
+     <div className='h-screen w-full flex justify-center items-center'>
+     <form onSubmit={Login} className='h-[60vh] w-[60vh] sm:h-[40vh] sm:ml-[48vh] relative top-[10vh] sm:top-[20vh] sm:w-[120vh] bg-white/20 text-slate-100 rounded'>
+      <div className='flex-col'>
+       <label htmlFor="email" className='ml-[1vh] text-sm sm:ml-[25vh]'>Email:   <input value={Email} onChange={(e)=>{setEmail(e.target.value)}} id='email' name='email' type='email' placeholder='Enter your Email' className=' mt-[5vh] w-[60vh] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200' /></label>
 
-      <label htmlFor="password" className='ml-[25vh]'>Password:   <input value={Password} onChange={(e)=>{setPassword(e.target.value)}} id='password' name='passwod'  type='password' placeholder='Enter a Passwod' className=' mt-[5vh] w-[47%] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200s' /></label>
+       <label htmlFor="password" className='ml-[1vh] relative sm:top-0 right-[42vh] top-[9vh] text-sm sm:ml-[25vh]'>Password: </label><input value={Password} onChange={(e)=>{setPassword(e.target.value)}} id='password' name='passwod'  type='password' placeholder='Enter a Passwod' className='mt-[5vh] relative left-[13vh] w-[70%] px-2 bg-om rounded-[2vh] border-solid border-1 border-slate-300 text-slate-200' />
+      </div>
       <div className='text-center'>
-      <button type='submit' className='bg-om px-[31vh] py-1 -ml-3 mt-[5vh] text-slate-200 border-none rounded-[20vh]'>Login</button>
+      <button type='submit' className='bg-om px-[12vh] sm:px-[31vh] py-1 -ml-3 mt-[5vh] text-slate-200 border-none rounded-[20vh]'>Login</button>
       </div>
       <div className='ml-[25vh] flex text-white'>
               <p className='-tracking-tighter font-mono'>If you don't have any account, <button onClick={resScreen} type='submit' className='text-blue-500 border-none mt-[8.5px]' >Register</button> now </p>
