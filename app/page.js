@@ -1,6 +1,5 @@
-import { LandPage } from "./component/LandPage";
 import Image from 'next/image'
-import Cource from "./component/Cource";
+import Hero from './component/Hero';
 
 
 const Main =()=>{
@@ -8,14 +7,8 @@ const Main =()=>{
 
   return(
     <>
-    <main>
-      <div className="relative h-screen w-full">
-      <Image className="absolute" fill src="/theam.jpg"></Image>
-      <LandPage />
-      </div>
-      <section id="cource" className="relative">
-        <Cource />
-      </section>
+    <main className='h-screen w-full overflow-hidden'>
+      <Hero />
     </main>
     </>
   );
