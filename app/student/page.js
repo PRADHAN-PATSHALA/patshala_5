@@ -1,6 +1,5 @@
 "use client"
 
-import { error } from "logrocket";
 import { useState } from "react"
 
 const Student = () => {

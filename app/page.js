@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import Hero from './component/Hero';
+import Big from './component/Big';
+
 
 
 const Main =()=>{
@@ -7,8 +7,8 @@ const Main =()=>{
 
   return(
     <>
-    <main className='h-screen w-full overflow-hidden'>
-      <Hero />
+    <main className='h-full w-full'>
+      <Big />
     </main>
     </>
   );
