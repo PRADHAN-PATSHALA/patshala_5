@@ -1,10 +1,12 @@
-import React from 'react'
+import Card from "./Card";
 
-const Courses = () => {
+
+const Courses = () => 
+  {
   return (
     <>
-      <div id='courses' className='relative h-screen w-full'>
-
+      <div id='courses' className='min-h-screen w-full flex-col relative'>
+        <Card />
       </div>
     </>
   )
