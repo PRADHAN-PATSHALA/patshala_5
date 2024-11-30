@@ -36,7 +36,7 @@ const Card = () => {
       {courses.map((e, i) => {
         return (
             <div key={i}>
-              <div className="flex mt-6 h-[20vh] relative top-[50vh] left-[12vh] w-[50vh] rounded-lg bg-white shadow-lg px-2 py-1">
+              <div className="flex mt-6 h-[20vh] relative top-[50vh] w-[50vh] rounded-lg bg-white shadow-lg px-2 py-1">
                 <Image className="bg-[#111]/20 rounded-lg" height={60} width={80} src={e.img}></Image>
                 <div className="h-full">
                   <h1 className="absolute top-[5vh] left-[20vh] text-lg font-bold font-serif">{e.name}</h1>

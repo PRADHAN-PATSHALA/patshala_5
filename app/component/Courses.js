@@ -5,7 +5,7 @@ const Courses = () =>
   {
   return (
     <>
-      <div id='courses' className='min-h-screen w-full flex-col relative'>
+      <div id='courses' className='min-h-screen w-full flex-col relative px-2'>
         <Card />
       </div>
     </>
