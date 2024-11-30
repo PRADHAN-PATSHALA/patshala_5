@@ -1,4 +1,4 @@
-import Courses from './courses'
+import Courses from './Courses'
 import Hero from './Hero'
 
 

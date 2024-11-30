@@ -12,7 +12,7 @@ export const Navber =()=>{
             </div>
              <ul className="mt-[16px] text-[0.6rem] sm:absolute right-4 sm:text-sm flex sm:right-12 top-0 z-20">
                 <li className="mr-3 cursor-pointer"><Link href="/">HOME</Link></li>
-                <li className="mr-3 cursor-pointer"><Link href='#cource'>COURCES</Link></li>
+                <li className="mr-3 cursor-pointer"><Link href='/#cource'>COURCES</Link></li>
                 <li className="mr-3 cursor-pointer"><Link href="/about">ABOUT</Link></li>
                 <li className="mr-3 cursor-pointer"><Link href="/contact">CONTACT</Link></li>
              </ul>
