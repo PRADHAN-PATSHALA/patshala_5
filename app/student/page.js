@@ -18,7 +18,7 @@ const Student = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:3000/api/create', {
+      const res = await fetch('https://pradhanpatshalanazat0.netlify.app/api/create', {
         method: "POST",
         headers: {
           "Content-type": "application/json",
