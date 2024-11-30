@@ -11,7 +11,6 @@ const createStudent = async (details) => {
             ID.unique(),
             details
         )
-        return response;
     } catch (error) {
         console.log(error);
     }

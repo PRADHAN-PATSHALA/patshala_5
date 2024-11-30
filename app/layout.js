@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       
 
       </head>
-      <body className='bg-gray-200 text-[#111] w-full h-full overflow-hidden'>
+      <body className='bg-gray-200 text-[#111] w-full h-full overflow-x-hidden overflow-y-auto'>
                
       <Navber />
         {children}
