@@ -9,11 +9,12 @@ const Footer = () => {
         <h1>NCSM
         National computer Saksharta Mission</h1>
         <p className="text-lg">Pradhan Pathshala| Pradhan Coaching Center is a part of NCSM</p>
-        <Link href={"more:www.ncsm.co.in"}>Know more about NCSM</Link>
+        <Link href={"https://ncsm.co.in"}>Know more about NCSM</Link>
         <h1>Get in <span className="text-cyan-400">touch</span></h1>
         <Link href={"tel:+919832290873"}>+919832290873</Link>
         <p>Address: Nazat - Khadipratisthan para(Bypas para) - near BDO office </p>
-        <Link className="text-sm hidden lg:flex relative lg:-bottom-[13vh] lg:left-[180vh]" href={"/student"}>Created by Merge</Link>
+        <h1 className="text-sm hidden lg:flex relative lg:-bottom-[13vh] lg:left-[180vh]">Created by Merge</h1>
+        <Link href={"/login"} className="text-sm hidden lg:flex relative lg:-bottom-[13vh] lg:left-[180vh]">Login</Link>
         </div>
       </div>
     </>
