@@ -1,4 +1,7 @@
+"use client"
+import gsap from 'gsap';
 import Big from './component/Big';
+
 
 
 

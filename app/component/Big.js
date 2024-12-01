@@ -13,4 +13,4 @@ const Big = () => {
   )
 }
 
-export default Big
+export default Big;

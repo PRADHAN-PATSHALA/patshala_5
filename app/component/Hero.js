@@ -4,7 +4,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <div className="h-full w-full overflow-hidden relative text-lg sm:text-8xl">
+      <div id="hero" className="h-full w-full overflow-hidden relative text-lg sm:text-8xl">
         <div className="min-h-screen w-full">
         <div className="h-[30vh] w-[30vh] shadow-[0_40px_80px_-15px_cyan] bg-cyan-400 absolute -left-[10vh] -top-[10vh] rounded-full z-[-1]"></div>
         <h1 className="font-serif font-light absolute top-[40vh] -translate-x-[50%] left-[50%]">Pradhan Pathshala</h1>
