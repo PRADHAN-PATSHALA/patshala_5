@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const Student = () => {
 
@@ -33,6 +35,26 @@ const Student = () => {
     } catch (error) {
       console.error(error);
     }
+    setName("");
+    setFatherName("");
+    setAddress("");
+    setCast("");
+    setCourseName("");
+    setDOB("");
+    setGender("");
+    setEQ("");
+    setPhoneNO("");
+    toast.success('Student created sucessfuly !', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+      });
   }
 
   return (
@@ -49,6 +71,7 @@ const Student = () => {
           <label className="relative text-white border-cyan-200 border-solid border-[.5px] mb-3 rounded-lg h-10 w-full items-center top-[10vh] flex text-lg font-serif font-semibold">Date of birth: <input placeholder="Type the student date of birth" className="font-sans font-light text-md text-white bg-[#111] w-[70vh] rounded-lg -translate-x-[50%] left-[50%] absolute" type="text" name="DOB" onChange={(e) => { setDOB(e.target.value) }} /></label>
           <label className="relative text-white border-cyan-200 border-solid border-[.5px] mb-3 rounded-lg h-10 w-full items-center top-[10vh] flex text-lg font-serif font-semibold">Phone no.: <input placeholder="Type the student phone number" className="font-sans font-light text-md text-white bg-[#111] w-[70vh] rounded-lg -translate-x-[50%] left-[50%] absolute" type="text" name="phoneNo" onChange={(e) => { setPhoneNO(e.target.value) }} /></label>
           <input className="px-8 py-2 bg-cyan-400 text-white -translate-x-[50%] left-[50%] absolute top-[90vh] rounded-full cursor-pointer" type="submit" />
+          <ToastContainer />
         </form>
       </div>
     </>
