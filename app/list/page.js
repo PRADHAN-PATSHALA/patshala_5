@@ -19,7 +19,6 @@ const List = async () => {
         }
         const result = await res.json();
         setData(result);
-        console.log(data);
       } catch (err) {
         setError(err.message);
       }
@@ -42,6 +41,15 @@ const List = async () => {
             <h1>Father's Name</h1>
             <h1>Course Name</h1>
           </div>
+          {data.map(e, i  =>{
+            return (
+              <div className='flex gap-10 justify-center text-xl text-bold'>
+                <p>{e.name}</p>
+                <p>{e.fatherName}</p>
+                <p>{e.Courseame}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
     </>
