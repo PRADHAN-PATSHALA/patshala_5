@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 
@@ -7,11 +7,30 @@ import React, { useState } from 'react'
 const List = async () => {
 
 
-      const res = await fetch('https://pradhanpathshala.netlify.app/api/read');
-      const data = await res.json();
-      if (!res.ok) {
-        throw new Error("Failed to create student data");
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch("https://pradhanpathshala.netlify.app/api/read");
+        if (!res.ok) {
+          throw new Error("Failed to fetch student data");
+        }
+        const result = await res.json();
+        setData(result);
+      } catch (err) {
+        setError(err.message);
       }
+    };
+
+    fetchData();
+  }, []);
+
+
+  if (error) {
+    return <p className="text-red-500 text-center">Error: {error}</p>;
+  }
 
   return (
     <>
@@ -22,12 +41,14 @@ const List = async () => {
             <h1>Father's Name</h1>
             <h1>Course Name</h1>
           </div>
-          {data.map((e, i)=>{
-            <div key={i} className='h-[5vh] w-full flex gap-10 relative top-6 left-[55vh]'>
+          {data.map(e,i =>{
+            return (
+              <div key={i} className='h-[5vh] w-full flex gap-10 relative top-6 left-[55vh]'>
             <p>{e.name}</p>
             <p>{e.fatherName}</p>
             <p>{e.courseName}</p>
           </div>
+            )
           })}
         </div>
       </div>
