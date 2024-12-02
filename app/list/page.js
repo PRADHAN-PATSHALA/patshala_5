@@ -14,12 +14,12 @@ const List = async () => {
     const fetchData = async () => {
       try {
         const res = await fetch("https://pradhanpathshala.netlify.app/api/read");
-        console.log(res)
         if (!res.ok) {
           throw new Error("Failed to fetch student data");
         }
         const result = await res.json();
         setData(result);
+        console.log(data);
       } catch (err) {
         setError(err.message);
       }
