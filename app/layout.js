@@ -7,6 +7,14 @@ import { Navber } from "./component/Navber"
 import gsap from 'gsap'
 
 
+export const metadata = {
+  title: 'PRADHAN PATSHALA',
+  openGraph: {
+    title: 'PRADHAN PATSHALA',
+    description: 'PRADHAN PATSHALA is a computer institute which is in NCSM',
+  },
+}
+
 
 
 export default function RootLayout({ children }) {
