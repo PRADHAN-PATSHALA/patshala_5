@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 const List = () => {
 
 
-  const [details, setDetails] = useState([])
+  const [details, setDetails] = useState()
 
 
   const st = async () =>{
