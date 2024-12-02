@@ -1,4 +1,3 @@
-"use client"
 import '../styles/globals.css'
 import Footer from './component/Footer'
 import Mouse from './component/Mouse'
