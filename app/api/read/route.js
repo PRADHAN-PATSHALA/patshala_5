@@ -10,9 +10,9 @@ const listStudent = async () => {
             [{name , fatherName , courseName}]
         );
         const list = response.documents.map((e =>{
-            name: $name;
-            father: $fatherName;
-            course: $courseName;
+            name: name;
+            father: fatherName;
+            course: courseName;
         }));
         return list;
     } catch (error) {
