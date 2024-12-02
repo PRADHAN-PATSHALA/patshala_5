@@ -1,9 +1,31 @@
-import React from 'react'
-import { listStudent } from '../api/read/route'
+"use client"
+import React, { useState } from 'react'
+
+
 
 
 const List = () => {
 
+
+  const [details, setDetails] = useState([])
+
+
+  const st = async () =>{
+    try {
+      const res = await fetch('https://pradhanpathshala.netlify.app/api/read', {
+        method: "GET",
+      });
+      const data = await res.json();
+      setDetails(data);
+      if (!res.ok) {
+        throw new Error("Failed to create student data");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  st()
 
   return (
     <>
@@ -14,11 +36,15 @@ const List = () => {
             <h1>Father's Name</h1>
             <h1>Course Name</h1>
           </div>
-          <div className='h-[5vh] w-full flex gap-10 relative top-6 left-[55vh]'>
-            <p>{listStudent().name}</p>
-            <p>{listStudent().fatherName}</p>
-            <p>{listStudent().courseName}</p>
+          {details.map((e)=>{
+            return (
+              <div className='h-[5vh] w-full flex gap-10 relative top-6 left-[55vh]'>
+            <p>{e.name}</p>
+            <p>{e.fatherName}</p>
+            <p>{e.courseName}</p>
           </div>
+            )
+          })}
         </div>
       </div>
     </>
