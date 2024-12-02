@@ -7,8 +7,13 @@ const listStudent = async () => {
         const response = await db.listDocuments(
             process.env.DB_ID,
             process.env.CO_ID,
+            [{name , fatherName , courseName}]
         );
-        const list = response.documents;
+        const list = response.documents.map((e =>{
+            name: $name;
+            father: $fatherName;
+            course: $courseName;
+        }));
         return list;
     } catch (error) {
         console.log(error);
