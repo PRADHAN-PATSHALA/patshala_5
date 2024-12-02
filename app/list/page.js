@@ -14,6 +14,7 @@ const List = async () => {
     const fetchData = async () => {
       try {
         const res = await fetch("https://pradhanpathshala.netlify.app/api/read");
+        console.log(res)
         if (!res.ok) {
           throw new Error("Failed to fetch student data");
         }
@@ -41,15 +42,6 @@ const List = async () => {
             <h1>Father's Name</h1>
             <h1>Course Name</h1>
           </div>
-          {data.map(e,i =>{
-            return (
-              <div key={i} className='h-[5vh] w-full flex gap-10 relative top-6 left-[55vh]'>
-            <p>{e.name}</p>
-            <p>{e.fatherName}</p>
-            <p>{e.courseName}</p>
-          </div>
-            )
-          })}
         </div>
       </div>
     </>
