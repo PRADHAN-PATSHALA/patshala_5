@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <title>PRADHAN PATSHALA</title>
       </head>
-      <body suppressHydrationWarning className='bg-gray-300 text-[#111] w-full h-full overflow-x-hidden overflow-y-auto'>
+      <body suppressHydrationWarning className='overflow-hidden bg-gray-300 text-[#111] w-full h-full overflow-x-hidden overflow-y-auto'>
                
       <Navber />
       <Mouse />

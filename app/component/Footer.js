@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="h-[50vh] w-full bg-cyan-950 text-lg sm:text-xl text-white">
+      <div className="h-[50vh] w-full bg-cyan-950 text-lg sm:text-xl text-white overflow-hidden">
         <div className="ml-4">
         <h1>NCSM
         National computer Saksharta Mission</h1>
